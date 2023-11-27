@@ -26,4 +26,9 @@ public class Line {
     public boolean equals(Line l){
         return this.x1 == l.x1 && this.x2 == l.x2 && this.y1 == l.y1 && this.y2 == l.y2;
     }
+    public int compare(Line l){
+        Double length1 = this.length();
+        Double length2 = l.length();
+        return length1.compareTo(length2);
+    }
 }
