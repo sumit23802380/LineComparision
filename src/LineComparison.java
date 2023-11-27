@@ -1,5 +1,5 @@
 /*
-    *@desc : Line Comparison Computation Class
+ *@desc : Line Comparison Computation Class
  */
 public class LineComparison {
     public static void main(String[] args) {
