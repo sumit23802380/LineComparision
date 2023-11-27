@@ -26,6 +26,11 @@ public class Line {
     public boolean equals(Line l){
         return this.x1 == l.x1 && this.x2 == l.x2 && this.y1 == l.y1 && this.y2 == l.y2;
     }
+    /*
+        *@desc : Compare the lengths of line
+        *@params : Other line l
+        *@return : 0 -> line length are equal , - -> line instance length is smaller else greater
+     */
     public int compare(Line l){
         Double length1 = this.length();
         Double length2 = l.length();
