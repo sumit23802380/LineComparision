@@ -1,14 +1,10 @@
 public class Line {
-    private double x1;
-    private double x2;
-    private double y1;
-    private double y2;
+    Point p1;
+    Point p2;
 
-    Line(double x1, double y1 , double x2 , double y2){
-        this.x1 = x1;
-        this.x2 = x2;
-        this.y1 = y1;
-        this.y2 = y2;
+    Line(Point p1 , Point p2){
+        this.p1 = p1;
+        this.p2 = p2;
     }
     /*
         @desc : find the length of line
@@ -16,7 +12,7 @@ public class Line {
         @return : length of line double
      */
     public double length(){
-        return Math.sqrt((this.x1 - this.x2)*(this.x1 - this.x2) +  (this.y1 - this.y2)*(this.y1 - this.y2));
+        return Math.sqrt((p1.x - p2.x)*(p1.x - p2.x) + (p1.y - p2.y)*(p1.y - p2.y));
     }
     /*
         @desc : check whether these lines are equal or not
@@ -24,7 +20,7 @@ public class Line {
         @return : boolean value equal or not
      */
     public boolean equals(Line l){
-        return this.x1 == l.x1 && this.x2 == l.x2 && this.y1 == l.y1 && this.y2 == l.y2;
+        return true;
     }
     /*
         *@desc : Compare the lengths of line
