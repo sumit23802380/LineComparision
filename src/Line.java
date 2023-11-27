@@ -18,4 +18,12 @@ public class Line {
     public double length(){
         return Math.sqrt((this.x1 - this.x2)*(this.x1 - this.x2) +  (this.y1 - this.y2)*(this.y1 - this.y2));
     }
+    /*
+        @desc : check whether these lines are equal or not
+        @params : Other line
+        @return : boolean value equal or not
+     */
+    public boolean equals(Line l){
+        return this.x1 == l.x1 && this.x2 == l.x2 && this.y1 == l.y1 && this.y2 == l.y2;
+    }
 }
